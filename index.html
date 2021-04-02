@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Imágenes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <h1>Buscador de Imágenes</h1>
+            <form class="form" id="form">
+                <div class="form__field">
+                    <input type="text" id="textoBusqueda" placeholder="Término a buscar. Ejemplo: Perro, Café">
+                    <svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input type="submit" value="Buscar">
+            </form>
+            <div id="alerta" class="alerta">
+                <p><span>Error!</span> Por favor digite el término a buscar</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="resultado" id="resultado"></div>
+            <div class="paginacion" id="paginacion"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Farid Moreno</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
